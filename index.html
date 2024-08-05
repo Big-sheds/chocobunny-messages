@@ -7,13 +7,15 @@
     <style>
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://drive.google.com/uc?export=view&id=1rdlyCcAA05uCcpX160H7oCi7v80ZXCsz');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .message {
             font-size: 2em;
@@ -22,6 +24,7 @@
             text-align: center;
             padding: 1em;
             border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better text readability */
         }
         @keyframes colors {
             0% { color: red; }
@@ -31,16 +34,9 @@
             80% { color: blue; }
             100% { color: purple; }
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
-    <img src="love_image.jpg" alt="Love Image">
     <div class="message" id="message">I LOVE YOU SO MUCH MY CHOCOBUNNY</div>
     <script>
         const messages = [
@@ -70,4 +66,3 @@
     </script>
 </body>
 </html>
-
