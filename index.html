@@ -19,6 +19,8 @@
             font-weight: bold;
             animation: colors 5s infinite;
             text-align: center;
+            padding: 1em;
+            border-radius: 10px;
         }
         @keyframes colors {
             0% { color: red; }
@@ -44,11 +46,16 @@
             "LEMME CATCH YOU FIRST",
             "I WILL...AND ...."
         ];
+        const colors = [
+            'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'brown', 'cyan'
+        ];
         let currentMessage = 0;
 
         function changeMessage() {
             currentMessage = (currentMessage + 1) % messages.length;
-            document.getElementById('message').textContent = messages[currentMessage];
+            const messageElement = document.getElementById('message');
+            messageElement.textContent = messages[currentMessage];
+            messageElement.style.color = colors[currentMessage];
         }
 
         setInterval(changeMessage, 3000); // Change message every 3 seconds
