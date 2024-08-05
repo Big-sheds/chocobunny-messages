@@ -7,6 +7,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -30,9 +31,16 @@
             80% { color: blue; }
             100% { color: purple; }
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
+    <img src="love_image.jpg" alt="Love Image">
     <div class="message" id="message">I LOVE YOU SO MUCH MY CHOCOBUNNY</div>
     <script>
         const messages = [
@@ -62,3 +70,4 @@
     </script>
 </body>
 </html>
+
